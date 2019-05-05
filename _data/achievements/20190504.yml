@@ -1,0 +1,20 @@
+en:
+  title: 'Experience 1'
+  subtitle: 'subtitle 1'
+  header: "Naglowek 1"
+  date-string: '3 may 2019'
+  icon: ''
+  description: >
+    Decription 1.
+  widget: |
+    
+pl-PL:
+  title: 'Doswiadczenie 1'
+  subtitle: 'podtytul 1'
+  header: "Naglowek 1"
+  date-string: '3 maja 2019'
+  icon: ''
+  description: >
+    Opis 1.
+  widget: |
+    

@@ -1,0 +1,16 @@
+<!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted text-center">
+        {% if page.language == 'en' %}
+          &copy; Harpist, {{ site.year }}.<br>
+          Hosted by <a href="https://github.com/s2426/harfistka.eu.org/">GitHub Pages</a>.<br>
+          Built with <a href="https://getbootstrap.com/">Bootstrap</a> and <a href="https://jekyllrb.com/">Jekyll</a>.<br>
+        {% elsif page.language == 'pl-PL' %}
+          &copy; Harfistka, {{ site.year }}.<br>
+          Hostowane na <a href="https://github.com/s2426/harfistka.eu.org/">GitHub Pages</a>.<br>
+          Zbudowane w oparciu o <a href="https://getbootstrap.com/">Bootstrap</a> oraz <a href="https://jekyllrb.com/">Jekyll</a>.<br>
+        {% endif %}
+        </p>
+      </div>
+    </footer>
