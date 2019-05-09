@@ -1,5 +1,3 @@
 User-agent: *
 
 Allow: /
-
-Sitemap:http://www.harfistka.eu.org/sitemap.xml
