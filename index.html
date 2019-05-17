@@ -509,7 +509,23 @@
 									<div class="row">
 										<div class="col-6">
 											 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-											<form id="main-contact-form" name="contact-form" method="post" action="https://us-central1-s2426-drive-manager.cloudfunctions.net/contactHapist">
+											<script>
+    $(document).ready(function() {
+      $('#main-contact-form').submit(function() {
+        $(this).ajaxSubmit({
+          error: function(xhr) {
+            status('Error: ' + xhr.status);
+          },
+         success: function(response) {
+          console.log(response);
+         }
+        });
+        //Very important line, it disable the page refresh.
+        return false;
+      });
+    });
+  </script>
+											<form id="main-contact-form" name="contact-form" method="post" action="https://us-central1-s2426-drive-manager.cloudfunctions.net/callMe">
 												<div class="g-recaptcha" data-sitekey="6LejDKQUAAAAAMPP1rLRJrfNERupZa5ft17hqDue"></div>
 												<div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
 													<div class="col-6">
